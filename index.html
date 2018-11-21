@@ -166,6 +166,18 @@
                 When you want to split your data handling logic, you'll use reducer composition instead of many
                 stores.
               </p>
+              <p>
+                Async actions are used to dispatch multiple dispetch or inner actions. This feature is used to show progress bar while data is fetching. 
+              </p>
+              <h5>
+                middleware
+              </h5>
+              <p>
+                  Asynchronous middleware like redux-thunk or redux-promise wraps the store's dispatch() method and allows you to dispatch something other than actions, for example, functions or Promises. Any middleware you use can then intercept anything you dispatch, and in turn, can pass actions to the next middleware in the chain. For example, a Promise middleware can intercept Promises and dispatch a pair of begin/end actions asynchronously in response to each Promise.
+              </p>
+              <p>
+                  It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. 
+              </p>
               <strong>A typical example of action with axiox instance</strong>
               <code>
                         import axiosInstance from '../https/https'
@@ -192,6 +204,24 @@
             <p class="post-meta">Posted by
               <a href="#">Start Bootstrap</a>
               on September 24, 2018</p>
+          </div>
+          <div>
+            <h4>Redux methods</h4>
+            <p>
+              <code>
+                export default connect(mapStateToProps, mapDispatchToProps)(Home);
+                  function mapStateToProps(store) {
+                      return {
+                          data: store.myReducer.data
+                      };
+                  }
+                  function mapDispatchToProps(dispatch) {
+                      return {
+                          clickHandler: (data) => dispatch(clickHandler(data))
+                      }
+                  }
+              </code>
+            </p>
           </div>
         </div>
 
