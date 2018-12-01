@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <code>
+                import React, {Component} from 'react';
+import app from 'ampersand-app';
+import { connect } from 'react-redux';
+import { loadFirstSportsView, updateCoupon , filterEvents, reloadCoupon, hideLeagues} from './sportsViewMethods';
+
+import config from 'config';
+
+import SportsView from './SportsView';
+
+import {updateSportsPriceFormat} from 'actions/sportsViewActions';
+
+import LoadingAnimationContainer from 'components/LoadingAnimation/LoadingAnimationContainer';
+import CouponContainer from 'components/Coupon/CouponContainer';
+import TimerBlockContainer from 'components/Coupon/TimerBlock/TimerBlockContainer';
+import MarketCriteriaContainer from 'components/MarketCriteria/MarketCriteriaContainer';
+import SportsFixtureContainer from 'components/sportsFixture/SportsFixtureContainer';
+
+import EventPathBannersContainer from 'components/contentManager/EventPathBannersContainer';
+
+
+const mapStateToProps = (state, ownProps) => {
+    if(!state.header.section) { return {} };
+
+    const {section, page, url} = state.header;
+
+    let Content, TimerBlock, MarketCriteriaBlock, SportsFixtureBlock;
+    const sportsCode = section;
+    const title = i18n.t(section);
+    const activeFixture = state.sportsFixture.active;
+    const priceFormat = state.sportsView.priceFormat;
+
+    const BannerBlock = config.isBannerEnabled ? <div id="eventpathbanner-container"><EventPathBannersContainer/></div> : null;
+
+    let leagues = [];
+    SportsFixtureBlock = <SportsFixtureContainer url={url} />;
+    if(state.sportsView.status === 'LOADED') {
+        leagues = app.sportsModel.tree.leagues;
+        var data = hideLeagues(app.sportsModel.tree.countries, state.sportsView.removeLeague);
+        TimerBlock  = <TimerBlockContainer update={updateCoupon} />;
+        Content     = <CouponContainer data={data} />;
+        MarketCriteriaBlock = <MarketCriteriaContainer url={url} activeFixture={activeFixture} />;
+
+        if(!app.sportsModel.tree.sports.length) {
+            Content = <div className="loading no-market">{i18n.t('common.noMarket')}</div>;
+        }
+    } else {
+        Content = <LoadingAnimationContainer />;
+    }
+
+    if (state.sportsNav.error || state.sportsView.status ==='ERROR') {
+        Content = <div className="error">
+            <div className="backdrop">
+                {i18n.t("errors.500")}
+                <a className="btn retry-now">retry now</a>
+            </div>
+        </div>;
+    }
+
+    return {
+        Content,
+        TimerBlock,
+        MarketCriteriaBlock,
+        SportsFixtureBlock,
+        BannerBlock,
+        title,
+        sportsCode,
+        url,
+        page,
+        priceFormat,
+        leagues
+    };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        loadSportsView : loadFirstSportsView,
+        reloadCoupon: reloadCoupon,
+        updateSportsPriceFormat(val) {
+            dispatch(updateSportsPriceFormat(val));
+        }
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SportsView);
+
+            </code>
+        </div>
+
+    </div>
+</body>
+</html>
