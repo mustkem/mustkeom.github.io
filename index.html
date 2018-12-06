@@ -227,6 +227,41 @@
               </code>
             </p>
           </div>
+          <div>
+            <h4>
+              CORS
+            </h4>
+            <p>
+              I was geting COORS errow when I was trying to access image from some origin say www.amazons3.cc while website url was diffrent that of image url. And this issue came on `img.onload` and getData() functions because these function are of canvas and this is how canvas takes things.
+            </p>
+            There are two resources a website look for on server. One is api request which we send explictly and other request which are send automatically by browser like image request for instance.
+
+            So when we want to access the resources of some other website say B from our website say A. We will need to set cors policy.
+            Site B can send an Access-Control-Allow-Origin response header to tell the browser that the content of this page is accessible to certain origins.
+            <p>
+            
+                (An origin is a domain, plus a scheme and port number.) By default, Site B's pages are not accessible to any other origin; using the Access-Control-Allow-Origin header opens a door for cross-origin access by specific requesting origins.
+              
+            </p>
+            <p>
+                For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages with the response header:
+                <strong>
+                Access-Control-Allow-Origin: http://siteA.com
+              </strong>
+
+            </p>
+            <p>
+              That was all about explicit requestes.
+
+            </p>
+            <p>
+              There may be case for implicit requests like image request.
+              There will be no issue if we just want to show some image in our websites comming from other server. 
+              However if we want to do some canvas operations on the image than an coors error will accour. So the image we want to have canvas operations should exists at same origin. ie the post and host of image should be same as port and host of url.
+
+            </p>
+            <p>This observation was based on croppie image plugin. If cross origin error comming in case of image. First try adding crossorigin = anonymus attribute to image. This should work else make both the origins identical.</p>
+          </div>
         </div>
 
         <!-- Pager -->
