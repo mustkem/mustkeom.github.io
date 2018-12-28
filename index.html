@@ -20,70 +20,71 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+  <div style="margin-left: auto; margin-right: auto; max-width: 42rem; padding: 2.625rem 1.3125rem;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Sample Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('http://i.imgur.com/x4r8KH1.pn')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('http://i.imgur.com/x4r8KH1.pn')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Clean Blog</h1>
+              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <div class="item">
-            <h3 style="margin-bottom: 0.4375rem;">
-              <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                Why Do React Hooks Rely on Call Order?
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <div class="item">
+              <h3 style="margin-bottom: 0.4375rem;">
+                <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
+                  Why Do React Hooks Rely on Call Order?
+                </a>
+              </h3>
+              <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
+              <p>Lessons learned from mixins, render props, HOCs, and classes.</p>
+            </div>
+            <div>
+              <a href="post.html">
+                <h4 class="post-title">
+                  Update inherited field of state object in react.
+                </h4>
               </a>
-            </h3>
-            <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-            <p>Lessons learned from mixins, render props, HOCs, and classes.</p>
-          </div>
-          <div>
-            <a href="post.html">
-              <h4 class="post-title">
-                Update inherited field of state object in react.
-              </h4>
-            </a>
-            <div class="post-subtitle">
-              <code>
+              <div class="post-subtitle">
+                <code>
                     formElements: {
                       ...this.state.formElements,
                          cities: {
@@ -92,97 +93,101 @@
                      }
                   }
                 </code>
-            </div>
+              </div>
 
-            <a>
-              <span>Read more...</span>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2018</p>
-          </div>
-          <div>
-            <a href="post.html">
-              <h4 class="post-title">
-                Get history as props from react router config
-              </h4>
-            </a>
-            <div class="post-subtitle">
-              <code>
+              <a>
+                <span>Read more...</span>
+              </a>
+              <p class="post-meta">Posted by
+                <a href="#">Start Bootstrap</a>
+                on September 24, 2018</p>
+            </div>
+            <div>
+              <a href="post.html">
+                <h4 class="post-title">
+                  Get history as props from react router config
+                </h4>
+              </a>
+              <div class="post-subtitle">
+                <code>
                     import { withRouter } from 'react-router';
                 </code>
+              </div>
+              <p>
+                We can get match(), History(), Location() using connect. It will find the matching route defined in
+                route.js
+                and according to that routing match will return specific information for that route.
+              </p>
+
+
+              <a>
+                <span>Read more...</span>
+              </a>
+              <p class="post-meta">Posted by
+                <a href="#">Start Bootstrap</a>
+                on September 24, 2018</p>
             </div>
-            <p>
-              We can get match(), History(), Location() using connect. It will find the matching route defined in
-              route.js
-              and according to that routing match will return specific information for that route.
-            </p>
-
-
-            <a>
-              <span>Read more...</span>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2018</p>
-          </div>
-          <div>
-            <a href="post.html">
-              <h4 class="post-title">
-                shallow vs deep comparison
-              </h4>
-            </a>
-            <div class="post-subtitle">
-              <code>
+            <div>
+              <a href="post.html">
+                <h4 class="post-title">
+                  shallow vs deep comparison
+                </h4>
+              </a>
+              <div class="post-subtitle">
+                <code>
                   shallow comparison: It means that when comparing scalar values it compares their values, but when comparing objects it compares only references. It helps to improve the performance of the app.
 
                   Deep comparison: Compare value and address both...
                 </code>
+              </div>
+
+              <p class="post-meta">Posted by
+                <a href="#">Start Bootstrap</a>
+                on September 24, 2018</p>
+              <a>
+                <span>Read more...</span>
+              </a>
+
             </div>
-
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2018</p>
-            <a>
-              <span>Read more...</span>
-            </a>
-
-          </div>
-          <div>
-            <a href="post.html">
-              <h4 class="post-title">
-                Redux
-              </h4>
-            </a>
-            <div class="post-subtitle">
-              <p> Actions represent the facts about “what happened” and the reducers update the state according to
-                those actions.
-                Actions return pure object this action is sent to reducer function and this reducer function update
-                state.
-                It's important to note that you'll only have a single store in a Redux application.
-                When you want to split your data handling logic, you'll use reducer composition instead of many
-                stores.
-              </p>
-              <p>
-                Async actions are used to dispatch multiple dispetch or inner actions. This feature is used to show
-                progress bar while data is fetching.
-              </p>
-              <h5>
-                middleware
-              </h5>
-              <p>
-                Asynchronous middleware like redux-thunk or redux-promise wraps the store's dispatch() method and
-                allows you to dispatch something other than actions, for example, functions or Promises. Any middleware
-                you use can then intercept anything you dispatch, and in turn, can pass actions to the next middleware
-                in the chain. For example, a Promise middleware can intercept Promises and dispatch a pair of begin/end
-                actions asynchronously in response to each Promise.
-              </p>
-              <p>
-                It provides a third-party extension point between dispatching an action, and the moment it reaches the
-                reducer.
-              </p>
-              <strong>A typical example of action with axiox instance</strong>
-              <code>
+            <div>
+              <a href="post.html">
+                <h4 class="post-title">
+                  Redux
+                </h4>
+              </a>
+              <div class="post-subtitle">
+                <p> Actions represent the facts about “what happened” and the reducers update the state according to
+                  those actions.
+                  Actions return pure object this action is sent to reducer function and this reducer function update
+                  state.
+                  It's important to note that you'll only have a single store in a Redux application.
+                  When you want to split your data handling logic, you'll use reducer composition instead of many
+                  stores.
+                </p>
+                <p>
+                  Async actions are used to dispatch multiple dispetch or inner actions. This feature is used to show
+                  progress bar while data is fetching.
+                </p>
+                <h5>
+                  middleware
+                </h5>
+                <p>
+                  Asynchronous middleware like redux-thunk or redux-promise wraps the store's dispatch() method and
+                  allows you to dispatch something other than actions, for example, functions or Promises. Any
+                  middleware
+                  you use can then intercept anything you dispatch, and in turn, can pass actions to the next
+                  middleware
+                  in the chain. For example, a Promise middleware can intercept Promises and dispatch a pair of
+                  begin/end
+                  actions asynchronously in response to each Promise.
+                </p>
+                <p>
+                  It provides a third-party extension point between dispatching an action, and the moment it reaches
+                  the
+                  reducer.
+                </p>
+                <strong>A typical example of action with axiox instance</strong>
+                <code>
                         import axiosInstance from '../https/https'
 
                           export const categoryMountAction = () => {
@@ -198,7 +203,7 @@
                               }   
                           }
                       </code>
-              <code>
+                <code>
                         export const fetchSuggestMeCarResearch = (queryParams) => {
                           return async (dispatch, getStore, api) => {
                               const response = await api.get('api/research-car-listing', {
@@ -213,20 +218,20 @@
                           };
                       }
                       </code>
-              <a>
-                <span>Read more...</span>
-              </a>
+                <a>
+                  <span>Read more...</span>
+                </a>
 
+              </div>
+
+              <p class="post-meta">Posted by
+                <a href="#">Start Bootstrap</a>
+                on September 24, 2018</p>
             </div>
-
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2018</p>
-          </div>
-          <div>
-            <h4>Redux methods</h4>
-            <p>
-              <code>
+            <div>
+              <h4>Redux methods</h4>
+              <p>
+                <code>
                 export default connect(mapStateToProps, mapDispatchToProps)(Home);
                   function mapStateToProps(store) {
                       return {
@@ -239,111 +244,116 @@
                       }
                   }
               </code>
-            </p>
+              </p>
+            </div>
+            <div>
+              <h4>
+                CORS
+              </h4>
+              <p>
+                I was geting COORS errow when I was trying to access image from some origin say www.amazons3.cc while
+                website url was diffrent that of image url. And this issue came on `img.onload` and getData() functions
+                because these function are of canvas and this is how canvas takes things.
+              </p>
+              There are two resources a website look for on server. One is api request which we send explictly and
+              other
+              request which are send automatically by browser like image request for instance.
+
+              So when we want to access the resources of some other website say B from our website say A. We will need
+              to
+              set cors policy.
+              Site B can send an Access-Control-Allow-Origin response header to tell the browser that the content of
+              this
+              page is accessible to certain origins.
+              <p>
+
+                (An origin is a domain, plus a scheme and port number.) By default, Site B's pages are not accessible
+                to
+                any other origin; using the Access-Control-Allow-Origin header opens a door for cross-origin access by
+                specific requesting origins.
+
+              </p>
+              <p>
+                For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages
+                with
+                the response header:
+                <strong>
+                  Access-Control-Allow-Origin: http://siteA.com
+                </strong>
+
+              </p>
+              <p>
+                That was all about explicit requestes.
+
+              </p>
+              <p>
+                There may be case for implicit requests like image request.
+                There will be no issue if we just want to show some image in our websites comming from other server.
+                However if we want to do some canvas operations on the image than an coors error will accour. So the
+                image we want to have canvas operations should exists at same origin. ie the post and host of image
+                should be same as port and host of url.
+
+              </p>
+              <p>This observation was based on croppie image plugin. If cross origin error comming in case of image.
+                First try adding crossorigin = anonymus attribute to image. This should work else make both the origins
+                identical.</p>
+            </div>
           </div>
-          <div>
-            <h4>
-              CORS
-            </h4>
-            <p>
-              I was geting COORS errow when I was trying to access image from some origin say www.amazons3.cc while
-              website url was diffrent that of image url. And this issue came on `img.onload` and getData() functions
-              because these function are of canvas and this is how canvas takes things.
-            </p>
-            There are two resources a website look for on server. One is api request which we send explictly and other
-            request which are send automatically by browser like image request for instance.
 
-            So when we want to access the resources of some other website say B from our website say A. We will need to
-            set cors policy.
-            Site B can send an Access-Control-Allow-Origin response header to tell the browser that the content of this
-            page is accessible to certain origins.
-            <p>
-
-              (An origin is a domain, plus a scheme and port number.) By default, Site B's pages are not accessible to
-              any other origin; using the Access-Control-Allow-Origin header opens a door for cross-origin access by
-              specific requesting origins.
-
-            </p>
-            <p>
-              For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages with
-              the response header:
-              <strong>
-                Access-Control-Allow-Origin: http://siteA.com
-              </strong>
-
-            </p>
-            <p>
-              That was all about explicit requestes.
-
-            </p>
-            <p>
-              There may be case for implicit requests like image request.
-              There will be no issue if we just want to show some image in our websites comming from other server.
-              However if we want to do some canvas operations on the image than an coors error will accour. So the
-              image we want to have canvas operations should exists at same origin. ie the post and host of image
-              should be same as port and host of url.
-
-            </p>
-            <p>This observation was based on croppie image plugin. If cross origin error comming in case of image.
-              First try adding crossorigin = anonymus attribute to image. This should work else make both the origins
-              identical.</p>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
           </div>
-        </div>
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
       </div>
     </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
   </div>
-
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
-
 </body>
 
 </html>
