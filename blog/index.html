@@ -8,3 +8,15 @@ title:  "Welcome to Jekyll!"
 **Hello world**, this is my first Jekyll blog post.
 
 I hope you like it!
+<div>
+<button onClick="fetch('https://sparx-classified-app.firebaseio.com/main.json')
+  .then((resp) => resp.json())
+  .then(function(data) {
+   console.log(data)
+  })
+  .catch(function(error) {
+    console.log(JSON.stringify(error));
+  });   ">
+hit api
+</button>
+</div>
