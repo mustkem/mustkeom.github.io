@@ -2,55 +2,43 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Clean Blog - Start Bootstrap Theme</title>
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-  <style>
-    
-    </style>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <div>
-    <header class="masthead" style="background-image: url('http://i.imgur.com/x4r8KH1.pn')">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
+  <div class="content">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about">About</a>
+                <a class="nav-link" href="/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="post.html">Sample Post</a>
+                <a class="nav-link" href="/blog">Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
 
+        </nav>
+      </div>
       <!-- Page Header -->
-
 
     </header>
 
@@ -83,7 +71,8 @@
                   </a>
                 </h3>
                 <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>console.log((new Date("11/22/2019").toLocaleDateString('in', {  year: 'numeric', month: 'short', day: 'numeric' })));
+                <p>console.log((new Date("11/22/2019").toLocaleDateString('in', { year: 'numeric', month: 'short', day:
+                  'numeric' })));
                   // expected output: 22 Nov 2019</p>
               </div>
               <div class="item">
@@ -331,6 +320,22 @@
                       }
                   }
               </code>
+                </p>
+              </div>
+              <div>
+                <h4>Cokie some use cases</h4>
+                <p>
+                  Cokies can be sent back to server request if they are already stored. <br>
+                  `react-cookies` is package which we use to manage (save/delete) cokies. <br>
+
+                  Once cokie is saved in browser and when any server request fires the browser will include these
+                  cokies with the request.<br>
+                </p>
+              </div>
+              <div>
+                <h4>Render html </h4>
+                <p>
+                  import renderHTML from 'react-render-html';<br>
                 </p>
               </div>
               <div>

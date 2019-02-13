@@ -1,0 +1,18 @@
+<div>
+    <p>You tube thumb and video in website</p>
+    <textarea name="" id="youtube" cols="100" rows="40">
+        // thumb
+            <img alt="thumb" src={"https://img.youtube.com/vi/" + sliderData[i].link.split("watch?v=")[1] + "/maxresdefault.jpg"} />
+
+        // youtube video //
+            <iframe
+                title={item.title}
+                width="560"
+                height="315"
+                src={"https://www.youtube.com/embed/" + item.link.split("watch?v=")[1]}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+            </iframe>
+    </textarea>
+</div>

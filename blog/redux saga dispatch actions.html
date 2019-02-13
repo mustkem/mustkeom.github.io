@@ -1,0 +1,19 @@
+<div>
+
+    <p>Action</p>
+        <textarea style="height:300px;width:500px">
+                export const fetchUsedCars = (queryParams) => {
+                    return async (dispatch, getStore, api) => {
+                        const response = await api.get('/api/cars/used', {
+                            params: {
+                                ...queryParams
+                            }  
+                        });
+                        dispatch({
+                            type: FETCH_USED_CARS,
+                            payload: response.data
+                        })
+                    };
+        </textarea>
+
+</div>

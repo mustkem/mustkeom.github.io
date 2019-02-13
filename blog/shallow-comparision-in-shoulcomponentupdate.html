@@ -1,0 +1,99 @@
+<div>
+    <h3>
+        How we get external data in some component.
+    </h3>
+    <p>
+        We will take an external class. Will keep aditional data in that class. Now we make methods in the class and
+        return back the combined data by calling those methods.
+    </p>
+    <p>Example of external class</p>
+    <textarea style="height:300px;width:500px">
+            class dataModel {
+                constructor(props) {
+                    this.props = props;
+                }
+            
+                overviewLComponentLinks = () => {
+            
+                    let overviewData = {
+                        ...this.props
+                    }
+                        return overviewData;
+                    }
+                }
+                
+                export default dataModel;
+                
+    </textarea>
+
+    <p>In react class import and use this class as</p>
+    <textarea style="height:200px;width:500px">
+            class FindUpcomingCars extends Component {
+                constructor(props) {
+                    super(props);
+            
+                    this.setData(this.props);
+                    this.findUpcommingCarsConfig = this.generateFormConfig(findUpcommingCarsConfig);
+                }
+
+                setData = data => this.data = new FormViewModel(data);
+
+                render(){
+                    console.log(this.data.methodName())
+                    return()
+                }
+            }
+    </textarea>
+
+    <textarea style="height:800px;width:500px">
+
+        // import it as in should component update //
+        shouldComponentUpdate(nextProps, nextState) {
+            if (shallowCompare(this, nextProps, nextState)) {
+                this.setData(nextProps);
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        // code written in shallow com
+
+        const shallowEqual = (objA, objB) => {
+            if (objA === objB) {
+                return true;
+            }
+        
+            if (typeof objA !== 'object' || objA === null ||
+                typeof objB !== 'object' || objB === null) {
+                return false;
+            }
+        
+            var keysA = Object.keys(objA);
+            var keysB = Object.keys(objB);
+        
+            if (keysA.length !== keysB.length) {
+                return false;
+            }
+        
+            // Test for A's keys different from B.
+            var bHasOwnProperty = hasOwnProperty.bind(objB);
+            for (var i = 0; i < keysA.length; i++) {
+                if (!bHasOwnProperty(keysA[i]) || objA[keysA[i]] !== objB[keysA[i]]) {
+                    return false;
+                }
+            }
+        
+            return true;
+        }
+        
+        export const shallowCompare = (instance, nextProps, nextState) => {
+            return (
+                !shallowEqual(instance.props, nextProps) ||
+                !shallowEqual(instance.state, nextState)
+            );
+        }
+
+      </textarea>
+</div>
