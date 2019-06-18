@@ -1,0 +1,11 @@
+Next js
+
+Nextjs site tells about how we can make setup from scratch. However if we know our requirment already than we can 
+select a biolerplate that they have made already. You can make this biolerplate as well But you may 
+take a lot of time to add diffrent features. They have biolerplates like next and react, next with redux, next redux redux thunk like 
+these. So Its up to you what setup or biolerpate you use. You have to follow their instructions and 
+you are good to go. 
+
+First step to start the project is to calculate the requirment. Like for example I need a biolerplate 
+that should have react next redux and redux thunk So I can drectly donload from there repo and can start working.
+
