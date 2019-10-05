@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Bits Of Life</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
 
 </head>
@@ -45,12 +45,14 @@
     <!-- Main Content -->
     <div class="content">
       <div class="container">
-        <h1 style="font-size: 2.5rem; line-height: 3.5rem; margin-bottom: 2.625rem; margin-top: 0px;"><a aria-current="page"
-            class="" href="/" style="box-shadow: none; text-decoration: none; color: inherit;">Overreacted</a>
+        <h1 style="font-size: 2.5rem; line-height: 3.5rem; margin-bottom: 2.625rem; margin-top: 0px;">
+          <a aria-current="page" class="" href="/" style="box-shadow: none; text-decoration: none; color: inherit;">Bits Of Life</a>
         </h1>
-        <div style="display: flex; margin-bottom: 4.375rem;"><img src="" alt="Mustkeem Khan" style="margin-right: 0.875rem; margin-bottom: 0px; width: 3.5rem; height: 3.5rem;">
-          <p style="max-width: 310px;">Personal blog by <a href="https://mobile.twitter.com/dan_abramov">Mustkeem Khan</a>.
-            I&nbsp;explain with words and code.</p>
+        <div style="display: flex; margin-bottom: 4.375rem;">
+          <!-- <img src="" alt="Mustkeem Khan" style="margin-right: 0.875rem; margin-bottom: 0px; width: 3.5rem; height: 3.5rem;"> -->
+          <p style="max-width: 310px;">Personal blog by
+            <a href="https://mobile.twitter.com/dan_abramov">Miridiyatul Ufa</a>.
+          </p>
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
@@ -58,362 +60,29 @@
               <div class="item">
                 <h3 style="margin-bottom: 0.4375rem;">
                   <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                    Why Do React Hooks Rely on Call Order?
+                    Vo Bevafa Hai To Kya
                   </a>
                 </h3>
-                <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>Lessons learned from mixins, render props, HOCs, and classes.</p>
-              </div>
-              <div class="item">
-                <h3 style="margin-bottom: 0.4375rem;">
-                  <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                    How to format dates?
-                  </a>
-                </h3>
-                <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>console.log((new Date("11/22/2019").toLocaleDateString('in', { year: 'numeric', month: 'short', day:
-                  'numeric' })));
-                  // expected output: 22 Nov 2019</p>
-              </div>
-              <div class="item">
-                <h3 style="margin-bottom: 0.4375rem;">
-                  <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                    Want some notes?
-                  </a>
-                </h3>
-                <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>Lessons learned from mixins, render props, HOCs, and classes.</p>
-                <p>Hit request for all api at server which used to render when we load refresh the page. Make a store
-                  from this data and send
-                  down to client side. Other apis which have no connection with page load or refresh can be put at
-                  client side.
-                </p>
-                <p></p>
-              </div>
-              <div class="item">
-                <h3 style="margin-bottom: 0.4375rem;">
-                  <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                    Component re and de structuring?
-                  </a>
-                </h3>
-                <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>Lessons learned from mixins, render props, HOCs, and classes.</p>
+                <small>December 13, 2018 • ☕️</small>
                 <p>
-                  The unique and seperate component <br>
-                  1. The page<br>
-                  2. main component<br>
-                  3. actions when page loads<br>
-                  4. DataModel<br>
-
-                  Common <br>
-
-                  1. Internal component which we use at multiple palces.<br>
-                </p>
-              </div>
-              <div class="item">
-                <h3 style="margin-bottom: 0.4375rem;">
-                  <a href="/why-do-hooks-rely-on-call-order/" style="box-shadow: none;">
-                    How to manage pagination?
-                  </a>
-                </h3>
-                <small>December 13, 2018 • ☕️☕️☕️☕️ 20 min read</small>
-                <p>Lessons learned pagination.</p>
-                <p>
-                  Packages used <br><br>
-
-                  import { stringify, parse } from 'query-string';
-                  import { withRouter } from 'react-router';<br><br>
-
-                  url format "/pagename/?test=5&foo=1<br><br>
-
-                  console.log(location.search);<br><br>
-                  //=> '?foo=bar'
-
-                  const parsed = queryString.parse(location.search);
-                  console.log(parsed);
-                  //=> {foo: 'bar'}<br><br>
-
-                  We will get location by using HOC withRouter. location.search will return query string from url.<br><br>
-
-                  refresh<br><br>
-
-                  We will be already geting query from url and will request server to send listing of data.
-
-                  In server side. We have to send request at our server. So server side redux store will already have
-                  data according to pagination.<br><br>
-
-
-                  click<br><br>
-
-                  When clicking on page number we will call a function. The page number will be passed to this
-                  function. In this function we get
-                  pre existed query from url and make a new query
-                  with new page number and put this updated query back in url. With this new formed query we will
-                  request data again from server
-                  and update listing and pagination.
-                </p>
-              </div>
-              <div>
-                <a href="post.html">
-                  <h4 class="post-title">
-                    Update inherited field of state object in react.
-                  </h4>
-                </a>
-                <div class="post-subtitle">
-                  <code>
-                    formElements: {
-                      ...this.state.formElements,
-                         cities: {
-                            ...this.state.formElements.cities,
-                            value: formState.cities
-                     }
-                  }
-                </code>
-                </div>
-
-                <a>
-                  <span>Read more...</span>
-                </a>
-                <p class="post-meta">Posted by
-                  <a href="#">Start Bootstrap</a>
-                  on September 24, 2018</p>
-              </div>
-              <div>
-                <a href="post.html">
-                  <h4 class="post-title">
-                    Get history as props from react router config
-                  </h4>
-                </a>
-                <div class="post-subtitle">
-                  <code>
-                    import { withRouter } from 'react-router';
-                </code>
-                </div>
-                <p>
-                  We can get match(), History(), Location() using connect. It will find the matching route defined in
-                  route.js
-                  and according to that routing match will return specific information for that route.
+                  Vo bevafa hai to kya ! mat kho bura usko !!
+                  <br> Ke hua so hua khus kakhe kuhda usko !
+                  <br> Najar na aye to uski talash mai rehna !
+                  <br> Kahi mile to palatkr na dekhna usko !!
+                  <br>
                 </p>
 
-
-                <a>
-                  <span>Read more...</span>
-                </a>
-                <p class="post-meta">Posted by
-                  <a href="#">Start Bootstrap</a>
-                  on September 24, 2018</p>
-              </div>
-              <div>
-                <a href="post.html">
-                  <h4 class="post-title">
-                    shallow vs deep comparison
-                  </h4>
-                </a>
-                <div class="post-subtitle">
-                  <code>
-                  shallow comparison: It means that when comparing scalar values it compares their values, but when comparing objects it compares only references. It helps to improve the performance of the app.
-
-                  Deep comparison: Compare value and address both...
-                </code>
-                </div>
-
-                <p class="post-meta">Posted by
-                  <a href="#">Start Bootstrap</a>
-                  on September 24, 2018</p>
-                <a>
-                  <span>Read more...</span>
-                </a>
-
-              </div>
-              <div>
-                <a href="post.html">
-                  <h4 class="post-title">
-                    Redux
-                  </h4>
-                </a>
-                <div class="post-subtitle">
-                  <p> Actions represent the facts about “what happened” and the reducers update the state according to
-                    those actions.
-                    Actions return pure object this action is sent to reducer function and this reducer function update
-                    state.
-                    It's important to note that you'll only have a single store in a Redux application.
-                    When you want to split your data handling logic, you'll use reducer composition instead of many
-                    stores.
-                  </p>
-                  <p>
-                    Async actions are used to dispatch multiple dispetch or inner actions. This feature is used to show
-                    progress bar while data is fetching.
-                  </p>
-                  <h5>
-                    middleware
-                  </h5>
-                  <p>
-                    Asynchronous middleware like redux-thunk or redux-promise wraps the store's dispatch() method and
-                    allows you to dispatch something other than actions, for example, functions or Promises. Any
-                    middleware
-                    you use can then intercept anything you dispatch, and in turn, can pass actions to the next
-                    middleware
-                    in the chain. For example, a Promise middleware can intercept Promises and dispatch a pair of
-                    begin/end
-                    actions asynchronously in response to each Promise.
-                  </p>
-                  <p>
-                    It provides a third-party extension point between dispatching an action, and the moment it reaches
-                    the
-                    reducer.
-                  </p>
-                  <strong>A typical example of action with axiox instance</strong>
-                  <code>
-                        import axiosInstance from '../https/https'
-
-                          export const categoryMountAction = () => {
-                                return (dispatch) => {
-                                axiosInstance.get('https://sparx-classified-app.firebaseio.com/main.json')
-                                  .then(json => {
-                                      dispatch({
-                                        type: 'DATA_REQUEST',
-                                        payload: json.data
-                                      })
-                                  })
-                                  .catch(function (error) { }); 
-                              }   
-                          }
-                      </code>
-                  <code>
-                        export const fetchSuggestMeCarResearch = (queryParams) => {
-                          return async (dispatch, getStore, api) => {
-                              const response = await api.get('api/research-car-listing', {
-                                  params: {
-                                      ...queryParams
-                                  }
-                              });
-                              dispatch({
-                                  type: FETCH_SUGGEST_ME_RESEARCH_PRODUCTS,
-                                  payload: response.data
-                              })
-                          };
-                      }
-                      </code>
-                  <a>
-                    <span>Read more...</span>
-                  </a>
-
-                </div>
-
-                <p class="post-meta">Posted by
-                  <a href="#">Start Bootstrap</a>
-                  on September 24, 2018</p>
-              </div>
-              <div>
-                <h4>Redux methods</h4>
-                <p>
-                  <code>
-                export default connect(mapStateToProps, mapDispatchToProps)(Home);
-                  function mapStateToProps(store) {
-                      return {
-                          data: store.myReducer.data
-                      };
-                  }
-                  function mapDispatchToProps(dispatch) {
-                      return {
-                          clickHandler: (data) => dispatch(clickHandler(data))
-                      }
-                  }
-              </code>
-                </p>
-              </div>
-              <div>
-                <h4>Cokie some use cases</h4>
-                <p>
-                  Cokies can be sent back to server request if they are already stored. <br>
-                  `react-cookies` is package which we use to manage (save/delete) cokies. <br>
-
-                  Once cokie is saved in browser and when any server request fires the browser will include these
-                  cokies with the request.<br>
-                </p>
-              </div>
-              <div>
-                <h4>Render html </h4>
-                <p>
-                  import renderHTML from 'react-render-html';<br>
-                </p>
-              </div>
-              <div>
-                <h4>
-                  CORS
-                </h4>
-                <p>
-                  I was geting COORS errow when I was trying to access image from some origin say www.amazons3.cc while
-                  website url was diffrent that of image url. And this issue came on `img.onload` and getData()
-                  functions
-                  because these function are of canvas and this is how canvas takes things.
-                </p>
-                There are two resources a website look for on server. One is api request which we send explictly and
-                other
-                request which are send automatically by browser like image request for instance.
-
-                So when we want to access the resources of some other website say B from our website say A. We will
-                need
-                to
-                set cors policy.
-                Site B can send an Access-Control-Allow-Origin response header to tell the browser that the content of
-                this
-                page is accessible to certain origins.
-                <p>
-
-                  (An origin is a domain, plus a scheme and port number.) By default, Site B's pages are not accessible
-                  to
-                  any other origin; using the Access-Control-Allow-Origin header opens a door for cross-origin access
-                  by
-                  specific requesting origins.
-
-                </p>
-                <p>
-                  For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages
-                  with
-                  the response header:
-                  <strong>
-                    Access-Control-Allow-Origin: http://siteA.com
-                  </strong>
-
-                </p>
-                <p>
-                  That was all about explicit requestes.
-
-                </p>
-                <p>
-                  There may be case for implicit requests like image request.
-                  There will be no issue if we just want to show some image in our websites comming from other server.
-                  However if we want to do some canvas operations on the image than an coors error will accour. So the
-                  image we want to have canvas operations should exists at same origin. ie the post and host of image
-                  should be same as port and host of url.
-
-                </p>
-                <p>This observation was based on croppie image plugin. If cross origin error comming in case of image.
-                  First try adding crossorigin = anonymus attribute to image. This should work else make both the
-                  origins
-                  identical.</p>
-              </div>
-            </div>
-            <div class="important links">
-              <h4>
-                Important Links
-              </h4>
-              <div>
-                <h5>Async/await</h5>
-                <a href="https://javascript.info/async-await">A Tutorial on async await > https://javascript.info/async-await</a>
               </div>
             </div>
 
             <!-- Pager -->
-            <div class="clearfix">
+            <!-- <div class="clearfix">
               <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-    <hr>
 
     <!-- Footer -->
     <footer>
@@ -446,7 +115,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+            <p class="copyright text-muted">Copyright &copy; bitsoflife.com 2019</p>
           </div>
         </div>
       </div>
