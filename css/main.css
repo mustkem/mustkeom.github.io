@@ -5,7 +5,8 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+  background: #f5f5dc;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -31,7 +32,8 @@ progress {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects
+  -webkit-text-decoration-skip: objects;
+
 }
 
 a:active, a:hover {
@@ -674,6 +676,7 @@ a {
   /* box-shadow: 0 1px 0 0 currentColor; */
   color: #d23669;
   text-decoration: none;
+  color:#990f02
 }
 
 a:hover, a:active {
