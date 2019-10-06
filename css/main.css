@@ -702,6 +702,7 @@ p code {
 .container {
   margin:0 auto;
   max-width: 60rem;
+  padding: 0 15px;
 }
 
 .header ul{
